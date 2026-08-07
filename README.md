@@ -1,16 +1,38 @@
-# React + Vite
+# Rice Leaf Disease Detection AI 🌾
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![Rice Leaf Disease Detection UI](public/home.png)
 
-Currently, two official plugins are available:
+## Overview
+**Rice Leaf Disease Detection AI** is a web-based application built to help farmers and agricultural professionals instantly diagnose rice plant diseases. By simply uploading a photo of a rice leaf, the system utilizes a powerful deep learning backend to classify the health of the plant and provide actionable agricultural advice.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Developed by:** Mark Joseph Potot
 
-## React Compiler
+## Features
+- **AI-Powered Analysis**: Upload images of rice leaves to instantly get a disease prediction using an integrated FastAPI prediction server.
+- **Actionable Advice**: Once a disease is detected, the app provides detailed information, prevention methods, and treatment strategies to mitigate crop damage.
+- **Detailed Confidence Metrics**: A visual side-panel displays the prediction confidence across various disease classes (e.g., Brown Spot, Leaf Blast, Bacterial Leaf Blight, Rice Hispa).
+- **Responsive UI**: A modern, glass-morphic, and fully responsive user interface built for both desktop and mobile devices.
+- **Guided Tutorial**: An interactive, step-by-step UI tour to help first-time users navigate the application.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- **Frontend Framework**: React + Vite
+- **Styling**: Vanilla CSS (Mobile-first responsive design, modern glassmorphism UI)
+- **Icons**: Lucide React
+- **Backend API**: FastAPI (expected on `localhost:8000/predict` by default)
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Install the frontend dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+3. *(Note: Ensure your Python/FastAPI prediction server is running locally or properly configured in your `.env` file to process the image requests).*
